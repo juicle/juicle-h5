@@ -1,0 +1,168 @@
+/* === Pages === */
+
+// Pages animations
+@pageDuration: 400ms;
+
+.page, .page-group {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    display: none;
+    overflow: hidden;
+
+    &.page-current,
+    &.page-visible,
+    &.page-from-center-to-left,
+    &.page-from-center-to-right,
+    &.page-from-right-to-center,
+    &.page-from-left-to-center {
+      display: block;
+    }
+
+    &.page-current {
+        overflow: hidden;
+    }
+}
+
+.page-group {
+  display: block;
+}
+
+//Class that will trigger transition during page custom transitions (like swipe-back)
+.page-transitioning {
+    &, .swipeback-page-shadow {
+        -webkit-transition: @pageDuration;
+        transition: @pageDuration;
+    }
+}
+// From/to Right To/from Center animations
+.page-from-right-to-center {
+    -webkit-animation: pageFromRightToCenter @pageDuration forwards;
+    animation: pageFromRightToCenter @pageDuration forwards;
+    z-index: 2002;
+}
+.page-from-center-to-right {
+    -webkit-animation: pageFromCenterToRight @pageDuration forwards;
+    animation: pageFromCenterToRight @pageDuration forwards;
+    z-index: 2002;
+}
+
+
+@-webkit-keyframes pageFromRightToCenter {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    opacity: .9;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes pageFromRightToCenter {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%,0,0);
+        opacity: .9;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes pageFromCenterToRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    opacity: .9;
+  }
+}
+
+@keyframes pageFromCenterToRight {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%,0,0);
+        opacity: .9;
+    }
+}
+
+
+// From/to Center To/from Left animations
+.page-from-center-to-left {
+  -webkit-animation: pageFromCenterToLeft @pageDuration forwards;
+          animation: pageFromCenterToLeft @pageDuration forwards;
+}
+.page-from-left-to-center {
+  -webkit-animation: pageFromLeftToCenter @pageDuration forwards;
+          animation: pageFromLeftToCenter @pageDuration forwards;
+}
+@-webkit-keyframes pageFromCenterToLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-20%, 0, 0);
+            transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@keyframes pageFromCenterToLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-20%, 0, 0);
+            transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@-webkit-keyframes pageFromLeftToCenter {
+  from {
+    opacity: .5;
+    -webkit-transform: translate3d(-20%, 0, 0);
+            transform: translate3d(-20%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pageFromLeftToCenter {
+  from {
+    opacity: .5;
+    -webkit-transform: translate3d(-20%, 0, 0);
+            transform: translate3d(-20%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}

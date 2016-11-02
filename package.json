@@ -1,0 +1,27 @@
+{
+  "name": "juicle-h5",
+  "version": "1.0.0",
+  "description": "juicle-h5",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 96"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juicle/juicle-h5.git"
+  },
+  "keywords": [
+    "h5"
+  ],
+  "author": "juicle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juicle/juicle-h5/issues"
+  },
+  "homepage": "https://github.com/juicle/juicle-h5#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

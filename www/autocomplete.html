@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>自动填充</title>
+  <meta name="description" content="Mobile">
+  <meta name="author" content="h5_ui">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="/css/ju.css">
+  <link rel="apple-touch-icon-precomposed" href="/images/ico.png">
+  <script src="/lib/zepto.js"></script>
+</head>
+<body>
+  <div class="page-group">
+    <div class="page" id="autocomplete">
+      <!-- 标题栏 -->
+      <header class="bar bar-nav">
+        <a class="button button-link button-nav pull-left back" href="/demos">
+          <span class="icon icon-left"></span>
+          返回
+        </a>
+        <h1 class="title">自动补全</h1>
+      </header>
+      <div class="bar bar-header-secondary">
+        <div class="searchbar">
+          <a class="searchbar-cancel">取消</a>
+          <div class="search-input">
+            <label class="icon icon-search" for="search"></label>
+            <input type="search" id='search' class="autocomplete-input" placeholder='输入关键字...' autocomplete="off" />
+          </div>
+          <div class="autocomplete-result"></div>
+        </div>
+      </div>
+
+      <!-- 这里是页面内容区 -->
+      <div class="content" id=''></div>
+    </div>
+
+  </div>
+  <script src="/js/ju.js"></script>
+  <script src="/lib/config.js"></script>
+</body>
+</html>

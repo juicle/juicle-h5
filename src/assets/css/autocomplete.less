@@ -1,0 +1,30 @@
+.autocomplete-result {
+    width: 96%;
+    position:absolute;
+    z-index: 20000;
+    background:lighten(@color-primary,40%);
+}
+
+.autocomplete-result ol {
+    list-style: none outside none;
+    margin-left: 0;
+    margin-top: 2px;
+    padding: 0;
+    margin-bottom:0rem;
+    width: 100%;
+    border:1px solid @color-primary;border-top:none;
+}
+
+.autocomplete-result li {
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    font-size:0.6rem;
+    padding: 0.2rem;
+    width: 100%;
+    text-transform: capitalize;
+}
+.autocomplete-result li:hover {
+    background-color: lighten(@color-primary,20%);
+    color: #ffffff;
+}

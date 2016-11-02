@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>circle</title>
+  <meta name="description" content="Mobile">
+  <meta name="author" content="h5_ui">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="/css/ju.css">
+  <link rel="apple-touch-icon-precomposed" href="/images/ico.png">
+  <script src="/lib/zepto.js"></script>
+
+</head>
+<body>
+  <div class="page-group">
+    <div class="page" id="page-circle">
+      <!-- 标题栏 -->
+      <header class="bar bar-nav">
+        <a class="button button-link button-nav pull-left back" href="/demos">
+          <span class="icon icon-left"></span>
+          返回
+        </a>
+        <h1 class="title">circle</h1>
+      </header>
+
+      <!-- 这里是页面内容区 -->
+      <div class="content">
+        <div id="circle" style="width:160px;height:160px;margin:auto">
+          <svg width="100%" height="100%" >
+            <circle cx="80" cy="80" r="60" stroke="#4cd964" stroke-width="3" fill="none" />
+            <text x="82" y="86" font-size="1rem" text-anchor="middle" fill="#4cd964">100%</text>
+          </svg>
+        </div>
+
+        <div id="circle2" style="width:160px;height:160px;margin:auto">
+          <svg width="100%" height="100%" >
+            <path d="M 80,80 m 0,-60 a 60,60 0 1 1 0,120 a 60,60 0 1 1 0,-120" stroke="#ececec" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M 80,80 m 0,-60 a 60,60 0 1 1 0,120 a 60,60 0 1 1 0,-120" stroke="#26a2ff" stroke-width="3" stroke-linecap="round" fill="none" style="stroke-dasharray: 798, 798; stroke-dashoffset: 468;"/>
+            <text x="82" y="86" font-size="1rem" text-anchor="middle" fill="#3FC7FA">80%</text>
+          </svg>
+        </div>
+
+        <div id="circle3" style="width:160px;height:160px;margin:auto">
+          <svg width="100%" height="100%" >
+            <path d="M 80,80 m 0,-60 a 60,60 0 1 1 0,120 a 60,60 0 1 1 0,-120" stroke="#ececec" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M 80,80 m 0,-60 a 60,60 0 1 1 0,120 a 60,60 0 1 1 0,-120" stroke="#f6383a" stroke-width="3" stroke-linecap="round" fill="none" class="animate" />
+            <text x="82" y="86" font-size="1rem" text-anchor="middle" fill="#f6383a">100%</text>
+          </svg>
+        </div>
+
+        <div id="circle4" style="width:160px;height:160px;margin:auto;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#f6383a" style="margin:64px 64px;">
+            <path opacity=".25" d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4"/>
+            <path d="M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z">
+              <animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite" />
+            </path>
+          </svg>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/js/ju.js"></script>
+</body>
+</html>

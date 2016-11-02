@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>进度条</title>
+  <meta name="description" content="Mobile">
+  <meta name="author" content="h5_ui">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="/css/ju.css">
+  <link rel="apple-touch-icon-precomposed" href="/images/ico.png">
+  <script src="/lib/zepto.js"></script>
+</head>
+<body>
+  <div class="page-group">
+    <div class="page" id="progress">
+      <!-- 标题栏 -->
+      <header class="bar bar-nav">
+        <a class="button button-link button-nav pull-left back" href="/demos">
+          <span class="icon icon-left"></span>
+          返回
+        </a>
+        <h1 class="title">进度条</h1>
+      </header>
+
+      <!-- 这里是页面内容区 -->
+      <div class="content">
+        <div class="list-block">
+          <ul>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title">默认</div>
+                <div class="item-progress">
+                  <div class="progress-content">
+                    <div class="progress-runway"></div>
+                    <div class="progress-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title">设置value</div>
+                <div class="item-progress">
+                  <div class="progress-content">
+                    <div class="progress-runway"></div>
+                    <div class="progress-progress" style="width:20%;"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title">左右文字</div>
+                <div class="item-progress">
+                  <div class="progress-start">0%</div>
+                  <div class="progress-content">
+                    <div class="progress-runway"></div>
+                    <div class="progress-progress" style="width:20%;"></div>
+                  </div>
+                  <div class="progress-end">100%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="list-block-label">
+            <a href="#" class="button button-fill" id="uploadFile">上传文件</a>
+          </div>
+          <div class="list-block-label" id="progress-bar">
+            <div class="progress-box">
+              <div class="progress-content">
+                <div class="progress-runway"></div>
+                <div class="progress-fill" id="progress-value"></div>
+              </div>
+              <div class="progress-end" id="progress-percent"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="/js/ju.js"></script>
+  <script src="/lib/config.js"></script>
+</body>
+</html>

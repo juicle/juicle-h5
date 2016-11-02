@@ -1,0 +1,73 @@
+.progress-box{
+	width:100%;
+    .flexbox();
+    height:30px;
+    line-height:30px;
+}
+.progress-content{
+	position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    .progress-runway,.progress-progress{
+    	position: absolute;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    .progress-runway{
+        width:100%;
+        background-color: #ebebeb;
+        height: 3px;
+    }
+    .progress-progress{
+        display: block;
+        background-color: @color-primary;
+        width: 0;
+        height:3px;
+    }
+}
+
+.progress-start{
+    margin-right:5px;
+}
+.progress-end{
+    margin-left:5px;
+}
+
+.progress-fill{
+	width:0%;
+	position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+	display: block;
+    background-color: @color-primary;
+    width: 0;
+    height:3px;
+
+    @keyframes myfirst{
+       from {width: 0%;}
+       to {width: 100%;}
+    }
+    @-moz-keyframes myfirst{
+       from {width: 0%;}
+       to {width: 100%;}
+    }
+    @-webkit-keyframes myfirst{
+       from {width: 0%;}
+       to {width: 100%;}
+    }
+    @-o-keyframes myfirst{
+       from {width: 0%;}
+       to {width: 100%;}
+    }
+    animation: myfirst 10s linear;
+    -moz-animation: myfirst 10s linear;	/* Firefox */
+    -webkit-animation: myfirst 10s linear;	/* Safari 和 Chrome */
+    -o-animation: myfirst 10s linear;
+}
+
+#progress-bar{
+	display:none;
+}

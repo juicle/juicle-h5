@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>下拉刷新</title>
+    <meta name="description" content="mobile">
+    <meta name="author" content="mobile">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/css/ju.css">
+    <link rel="apple-touch-icon-precomposed" href="/images/ico.png">
+    <script src="/lib/zepto.js"></script>
+
+
+  </head>
+  <body>
+    <div class="page-group">
+    <div id="page-ptr" class="page">
+  <header class="bar bar-nav">
+    <a class="button button-link button-nav pull-left back" href="/demos">
+      <span class="icon icon-left"></span>
+      返回
+    </a>
+    <h1 class="title">下拉刷新</h1>
+  </header>
+  <div class="content pull-to-refresh-content">
+    <div class="pull-to-refresh-layer">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
+    <!-- 下面是正文 -->
+    <div class="card-container">
+      <div class="card">
+        <div class="card-header">卡片标题</div>
+        <div class="card-content">
+          <div class="card-content-inner">
+            下拉屏幕试试，会出现更多的卡片
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <script src="/js/ju.js"></script>
+    <script src="/lib/config.js"></script>
+  </body>
+</html>

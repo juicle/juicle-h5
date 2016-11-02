@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>图片懒加载</title>
+  <meta name="description" content="Mobile">
+  <meta name="author" content="h5_ui">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="/css/ju.css">
+  <link rel="apple-touch-icon-precomposed" href="/images/ico.png">
+  <script src="/lib/zepto.js"></script>
+</head>
+<body>
+  <div class="page-group">
+    <div class="page" id="page-lazy">
+      <!-- 标题栏 -->
+      <header class="bar bar-nav">
+        <a class="button button-link button-nav pull-left back" href="/demos">
+          <span class="icon icon-left"></span>
+          返回
+        </a>
+        <h1 class="title">图片懒加载</h1>
+      </header>
+
+      <!-- 这里是页面内容区 -->
+      <div class="content">
+        <div id="lazyload" style="height:100%;overflow:scroll;width:100%;padding-top:20px;">
+          <div class="lazy" data-original="http://fuss10.elemecdn.com/b/18/0678e57cb1b226c04888e7f244c20jpeg.jpeg" style="width:300px;height:397px;margin:20px auto"></div>
+          <div class="lazy" data-original="http://fuss10.elemecdn.com/3/1e/42634e29812e6594c98a89e922c60jpeg.jpeg" style="width:300px;height:300px;margin:20px auto">
+            <div class="preloader"></div>
+          </div>
+          <div class="lazy" data-original="http://fuss10.elemecdn.com/1/c5/95c37272d3e554317dcec1e17a9f5jpeg.jpeg" style="width:300px;height:300px;margin:20px auto">
+            <div class="preloader"></div>
+          </div>
+          <div class="lazy" data-original="http://fuss10.elemecdn.com/7/85/e478e4b26af74f4539c79f31fde80jpeg.jpeg" style="width:300px;height:183px;margin:20px auto">
+            <div class="preloader"></div>
+          </div>
+          <div class="lazy" data-original="http://fuss10.elemecdn.com/b/df/b630636b444346e38cef6c59f6457jpeg.jpeg" style="width:300px;height:300px;margin:20px auto">
+            <div class="preloader"></div>
+          </div>
+          <div class="lazy" data-original="http://fuss10.elemecdn.com/7/a5/596ab03934612236f807b92906fd8jpeg.jpeg" style="width:300px;height:300px;margin:20px auto">
+            <div class="preloader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/ju.js"></script>
+
+  <script src="/lib/config.js"></script>
+</body>
+</html>
